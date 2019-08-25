@@ -1,0 +1,36 @@
+Git
+版本控制工具(代码管理工具)：开源、免费
+下载官网：https://git-scm.com/
+git 配置：
+	1.连接远程github的账号
+	用户名：wmj970504
+	邮箱：1003568049@qq.com
+	密码：wang970504
+    3.授权本台电脑：ssh-key -t rsa -C "1003568049@qq.com"
+	4.配置本台电脑可使用的用户名及邮箱
+	git config --global user.name "用户名"
+	//查看是否是自己的用户名
+	git config user.name
+
+	git config --global user.email
+	//查看是否是自己的邮箱
+	git config user.email
+
+	ssh -T git@githb.com
+	输入yes 回车
+	换电脑执行3-4
+代码推送：
+	本地带有.git隐藏文件夹的文件夹作为本地仓库()
+	初始化仓库
+	git init 创建一个隐藏文件
+	echo '123'>>1.txt
+	将123输入到1.txt
+	git status： 查看当前 git 状态
+	红色文件 代表未被追踪的文件
+	绿色文件 代表 被追踪
+	git add 1.txt：指定添加的文件
+	git commit -m "注释":提交到缓存区并注释
+	git remote add origin git仓库地址
+	git push -u origin master：推送
+
+ 
